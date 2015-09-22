@@ -229,7 +229,7 @@ public class SearchBox extends RelativeLayout {
 			@Override
 			public boolean onFilter(SearchResult searchResult, String searchTerm) {
 				return searchResult.title.toLowerCase()
-						.startsWith(searchTerm.toLowerCase());
+						.contains(searchTerm.toLowerCase());
 			}
 		};
 	}
